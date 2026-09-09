@@ -34,10 +34,10 @@ const Sign_Up= ({account,AddAccount})=>{
     return(
         <>
             <div>
-                <input className="border-2" type="email" placeholder="example@example.com" onChange={(e)=>{setEmail(e.target.value)}}/>
-                <input className="border-2" type="text" placeholder="Nickname" onChange={(e)=>{setNickname(e.target.value)}}/>
-                <input className="border-2" type="password" placeholder="password" onChange={(e)=>{setPasssword(e.target.value)}}/>
-                <input className="border-2" type="password" placeholder="password again" onChange={(e)=>{setPassswordCheck(e.target.value)}}/>
+                <input  type="email" placeholder="example@example.com" onChange={(e)=>{setEmail(e.target.value)}}/>
+                <input  type="text" placeholder="Nickname" onChange={(e)=>{setNickname(e.target.value)}}/>
+                <input  type="password" placeholder="password" onChange={(e)=>{setPasssword(e.target.value)}}/>
+                <input  type="password" placeholder="password again" onChange={(e)=>{setPassswordCheck(e.target.value)}}/>
                 <button onClick={()=>Signup()}>계정 만들기</button>
                 
             </div>

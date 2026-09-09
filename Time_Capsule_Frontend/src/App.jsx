@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes,Route, useNavigate } from 'react-router-dom'
+import { Routes,Route } from 'react-router-dom'
 import Login from './Login'
 import Sign_Up from './Sign_Up'
 import { useState } from 'react';
@@ -7,7 +7,6 @@ import ViewPort from './ViewPort';
 import Header from './Header';
 
 function App() {
-  const navi = useNavigate();
   const [account,setAccount] = useState([{email : "example@example.com", password : "1234", nickname : "준혁"}]);
   const [isLogined,setIsLogined] = useState(false)
 
