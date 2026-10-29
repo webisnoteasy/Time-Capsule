@@ -1,7 +1,10 @@
 import { Routes,Route } from 'react-router-dom'
-import { useState } from 'react';
-import Header from './Header';
+import Header from './Component/Header';
 import LoginPage from './LoginPage';
+import SignUp from './SignUp';
+import NoLoginPage from './NoLoginPage';
+import Home from './Home';
+import MakeCapsule from './MakeCapsule';
 
 function App() {
   return(
@@ -9,8 +12,12 @@ function App() {
       <Header/>
       <div className='flex flex-col justify-center items-center w-full'>
         <Routes>
+          <Route path='/' element={<Home/>}/>
           <Route path='/login' element={<LoginPage/>}/>
-      </Routes>
+          <Route path='/signup' element={<SignUp/>}/>
+          <Route path='/noLogin' element={<NoLoginPage/>}/>
+          <Route path='/makeAcapsule' element={<MakeCapsule/>}/>
+        </Routes>
       </div>
     </div>
 

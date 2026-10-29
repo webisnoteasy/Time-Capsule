@@ -1,0 +1,274 @@
+<style>
+#mc-home-concepts{color-scheme:light dark;font-family: -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:light-dark(#263544,#e8e6df);--mc-bg:light-dark(#f8f5ee,#202322);--mc-paper:light-dark(#fff,#2a2e2d);--mc-text:light-dark(#263544,#e8e6df);--mc-dim:light-dark(#777e7d,#a9b2ad);--mc-line:light-dark(#e8e6df,#3b413d);--mc-ink:light-dark(#31445a,#c5d4e2);--mc-on-ink:light-dark(#fff,#233342);--mc-wash:light-dark(#eeeae0,#34382f);--mc-soft:light-dark(#eff2f4,#343e45);--mc-green:light-dark(#537a65,#b5d3bb);--mc-green-soft:light-dark(#edf4ee,#303e34);--mc-radius:18px;--mc-gap:24px;width:100%;}
+#mc-home-concepts *{box-sizing:border-box;}
+#mc-home-concepts [hidden]{display:none!important;}
+#mc-home-concepts button,#mc-home-concepts input,#mc-home-concepts textarea{font:inherit;}
+#mc-home-concepts button{color:inherit;}
+#mc-home-concepts .mc-stage{min-height:782px;}
+#mc-home-concepts .mc-app{position:relative;display:grid;grid-template-columns:186px minmax(0,1fr);gap:0;padding:16px;background:var(--mc-bg);border-radius:22px;min-height:770px;isolation:isolate;}
+#mc-home-concepts .mc-side{display:flex;flex-direction:column;gap:26px;background:var(--mc-paper);border:1px solid var(--mc-line);border-radius:var(--mc-radius);padding:25px 13px 16px;min-width:0;}
+#mc-home-concepts .mc-brand{display:flex;align-items:center;gap:9px;padding:0 9px 24px;border-bottom:1px solid var(--mc-line);font-weight:700;font-size:21px;letter-spacing:-1px;white-space:nowrap;color:var(--mc-ink);}
+#mc-home-concepts .mc-brand svg{width:24px;height:24px;flex:none;}
+#mc-home-concepts .mc-nav{display:flex;flex-direction:column;gap:9px;}
+#mc-home-concepts .mc-nav-button{display:flex;gap:11px;align-items:center;border:0;background:transparent;padding:14px 13px;width:100%;border-radius:12px;text-align:left;font-size:14px;font-weight:500;white-space:nowrap;}
+#mc-home-concepts .mc-nav-button svg{width:19px;height:19px;flex:none;}
+#mc-home-concepts .mc-nav-button[aria-current="page"]{background:var(--mc-ink);color:var(--mc-on-ink);}
+#mc-home-concepts .mc-nav-button:not([aria-current="page"]):hover{background:var(--mc-soft);}
+#mc-home-concepts .mc-side-bottom{margin-top:auto;padding:18px 9px 0;border-top:1px solid var(--mc-line);}
+#mc-home-concepts .mc-account{display:flex;align-items:center;gap:9px;}
+#mc-home-concepts .mc-avatar{display:grid;place-items:center;width:31px;height:31px;flex:none;border-radius:50%;color:var(--mc-ink);background:var(--mc-soft);font-size:12px;font-weight:600;}
+#mc-home-concepts .mc-account-name{font-size:12px;font-weight:600;margin-bottom:4px;}
+#mc-home-concepts .mc-account-email{font-size:11px;color:var(--mc-dim);overflow-wrap:anywhere;}
+#mc-home-concepts .mc-main{min-width:0;padding:14px 22px 7px 32px;}
+#mc-home-concepts .mc-topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-right:76px;margin-bottom:28px;min-height:24px;}
+#mc-home-concepts .mc-breadcrumb{font-size:13px;font-weight:600;}
+#mc-home-concepts .mc-preview-label{font-size:10px;letter-spacing:.2px;color:var(--mc-dim);white-space:nowrap;}
+#mc-home-concepts .mc-hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:16px;align-items:center;min-height:245px;padding-bottom:29px;margin-bottom:var(--mc-gap);border-bottom:1px solid var(--mc-line);}
+#mc-home-concepts .mc-eyebrow{font-size:11px;font-weight:600;letter-spacing:1.2px;color:var(--mc-dim);margin:0 0 14px;}
+#mc-home-concepts h1{font-size:32px;font-weight:700;letter-spacing:-1.7px;line-height:1.45;margin:0;color:var(--mc-text);}
+#mc-home-concepts .mc-title-accent{color:var(--mc-ink);}
+#mc-home-concepts .mc-description{margin:13px 0 21px;font-size:13px;line-height:1.85;color:var(--mc-dim);word-break:keep-all;}
+#mc-home-concepts .mc-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:11px 17px;border:0;border-radius:11px;background:var(--mc-ink);color:var(--mc-on-ink);font-size:12px;font-weight:600;white-space:nowrap;}
+#mc-home-concepts .mc-primary:hover{filter:brightness(.94);}
+#mc-home-concepts .mc-primary svg{width:16px;height:16px;}
+#mc-home-concepts .mc-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 13px;min-height:40px;font-size:12px;border:1px solid var(--mc-line);border-radius:10px;background:var(--mc-paper);}
+#mc-home-concepts .mc-envelope-scene{height:200px;position:relative;display:grid;place-items:center;}
+#mc-home-concepts .mc-envelope-halo{position:absolute;width:174px;height:174px;border-radius:50%;background:var(--mc-wash);opacity:.65;}
+#mc-home-concepts .mc-letter-paper{position:absolute;left:19px;right:10px;top:23px;height:131px;border:1px solid var(--mc-line);background:var(--mc-paper);border-radius:6px;transform:rotate(-9deg);padding:18px 13px;}
+#mc-home-concepts .mc-paper-to{font-family:Georgia,serif;font-size:13px;color:var(--mc-ink);}
+#mc-home-concepts .mc-paper-message{font-size:10px;color:var(--mc-dim);margin-top:10px;}
+#mc-home-concepts .mc-paper-line{height:1px;background:var(--mc-line);margin-top:10px;}
+#mc-home-concepts .mc-envelope{position:absolute;top:97px;width:156px;height:99px;border-radius:4px 4px 10px 10px;background:light-dark(#e6dcca,#4a473d);transform:rotate(-7deg);box-shadow:0 12px 18px light-dark(#5a4b3610,#00000020);overflow:hidden;}
+#mc-home-concepts .mc-envelope:before{content:"";position:absolute;inset:0;clip-path:polygon(0 0,50% 65%,100% 0,100% 100%,0 100%);background:light-dark(#f0e7d7,#5a5445);}
+#mc-home-concepts .mc-envelope:after{content:"";position:absolute;inset:0;clip-path:polygon(0 100%,50% 38%,100% 100%);background:light-dark(#f7efdf,#655e4e);}
+#mc-home-concepts .mc-wax{position:absolute;top:138px;left:65px;z-index:2;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:3px double light-dark(#c9bda7,#867a62);background:light-dark(#e5d7bd,#615842);font-size:9px;font-family:Georgia,serif;color:light-dark(#6b6355,#ece2d2);transform:rotate(-7deg);}
+#mc-home-concepts .mc-letter-caption{position:absolute;right:0;top:16px;font-size:9px;letter-spacing:1.2px;color:var(--mc-dim);transform:rotate(7deg);}
+#mc-home-concepts .mc-section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 13px;}
+#mc-home-concepts h2{font-size:15px;font-weight:600;letter-spacing:-.5px;line-height:1.6;margin:0;}
+#mc-home-concepts .mc-link{display:inline-flex;align-items:center;gap:5px;border:0;background:transparent;padding:5px 0;font-size:11px;color:var(--mc-dim);white-space:nowrap;}
+#mc-home-concepts .mc-link:hover{color:var(--mc-ink);}
+#mc-home-concepts .mc-link svg{width:13px;height:13px;}
+#mc-home-concepts .mc-feature-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;margin-bottom:var(--mc-gap);}
+#mc-home-concepts .mc-next{padding:19px 20px;background:var(--mc-paper);border:1px solid var(--mc-line);border-radius:var(--mc-radius);min-width:0;}
+#mc-home-concepts .mc-next-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px;}
+#mc-home-concepts .mc-next-title{font-size:11px;color:var(--mc-dim);}
+#mc-home-concepts .mc-status{display:inline-flex;align-items:center;gap:5px;font-size:10px;border-radius:20px;padding:4px 8px;background:var(--mc-green-soft);color:var(--mc-green);white-space:nowrap;}
+#mc-home-concepts .mc-status:before{content:"";width:4px;height:4px;background:currentColor;border-radius:50%;}
+#mc-home-concepts .mc-status.is-sent{background:var(--mc-soft);color:var(--mc-dim);}
+#mc-home-concepts .mc-next-subject{font-size:18px;font-weight:600;letter-spacing:-.6px;margin:0 0 9px;}
+#mc-home-concepts .mc-next-email{font-size:11px;color:var(--mc-dim);margin-bottom:19px;overflow-wrap:anywhere;}
+#mc-home-concepts .mc-next-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:13px;border-top:1px solid var(--mc-line);}
+#mc-home-concepts .mc-date-label{font-size:10px;color:var(--mc-dim);margin-bottom:5px;}
+#mc-home-concepts .mc-date-value{font-size:12px;font-weight:500;font-variant-numeric:tabular-nums;}
+#mc-home-concepts .mc-dday{font-family:Georgia,serif;color:var(--mc-ink);font-size:27px;white-space:nowrap;}
+#mc-home-concepts .mc-prompt{border-radius:var(--mc-radius);background:var(--mc-wash);padding:19px 19px 15px;min-width:0;display:flex;flex-direction:column;}
+#mc-home-concepts .mc-prompt-label{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--mc-dim);margin-bottom:12px;}
+#mc-home-concepts .mc-prompt-label svg{height:13px;width:13px;}
+#mc-home-concepts .mc-prompt-question{font-size:16px;font-weight:500;line-height:1.7;letter-spacing:-.5px;margin:0 0 13px;word-break:keep-all;}
+#mc-home-concepts .mc-prompt .mc-link{margin-top:auto;color:var(--mc-ink);align-self:flex-start;}
+#mc-home-concepts .mc-count{font-size:11px;font-weight:400;color:var(--mc-dim);margin-left:6px;}
+#mc-home-concepts .mc-mail-list{display:flex;flex-direction:column;}
+#mc-home-concepts .mc-mail-row{display:grid;grid-template-columns:35px minmax(0,1fr) 89px 65px 12px;gap:10px;align-items:center;padding:15px 1px;border:0;border-top:1px solid var(--mc-line);background:transparent;width:100%;text-align:left;}
+#mc-home-concepts .mc-mail-row:hover .mc-row-subject{color:var(--mc-ink);text-decoration:underline;text-underline-offset:4px;}
+#mc-home-concepts .mc-row-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:var(--mc-paper);color:var(--mc-ink);}
+#mc-home-concepts .mc-row-icon svg{width:16px;height:16px;}
+#mc-home-concepts .mc-row-subject{font-size:12px;font-weight:500;line-height:1.6;overflow-wrap:anywhere;}
+#mc-home-concepts .mc-row-email{display:block;font-size:10px;color:var(--mc-dim);margin-top:3px;font-weight:400;overflow-wrap:anywhere;}
+#mc-home-concepts .mc-row-date{font-size:11px;color:var(--mc-dim);font-variant-numeric:tabular-nums;white-space:nowrap;}
+#mc-home-concepts .mc-row-arrow{height:12px;width:12px;color:var(--mc-dim);}
+#mc-home-concepts .mc-footnote{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--mc-dim);margin-top:16px;line-height:1.7;}
+#mc-home-concepts .mc-footnote svg{width:12px;height:12px;flex:none;}
+#mc-home-concepts .mc-empty{text-align:center;padding:34px 15px;border-top:1px solid var(--mc-line);}
+#mc-home-concepts .mc-empty p{font-size:13px;color:var(--mc-dim);line-height:1.9;margin:8px 0 18px;}
+#mc-home-concepts .mc-empty strong{font-size:15px;font-weight:600;}
+#mc-home-concepts .mc-list-hero{padding:8px 0 25px;display:flex;gap:18px;align-items:center;justify-content:space-between;}
+#mc-home-concepts .mc-list-hero h1{font-size:28px;}
+#mc-home-concepts .mc-list-hero .mc-description{margin-bottom:0;}
+#mc-home-concepts .mc-dispatch-strip{background:var(--mc-ink);color:var(--mc-on-ink);padding:21px 23px;border-radius:var(--mc-radius);display:flex;align-items:center;justify-content:space-between;gap:18px;margin:4px 0 29px;}
+#mc-home-concepts .mc-strip-title{font-size:11px;opacity:.8;display:flex;align-items:center;gap:7px;margin-bottom:8px;}
+#mc-home-concepts .mc-strip-title svg{width:14px;height:14px;}
+#mc-home-concepts .mc-strip-subject{font-size:17px;font-weight:500;margin-bottom:7px;letter-spacing:-.4px;}
+#mc-home-concepts .mc-strip-date{font-size:11px;opacity:.8;}
+#mc-home-concepts .mc-strip-dday{text-align:right;flex:none;}
+#mc-home-concepts .mc-strip-dday b{font-family:Georgia,serif;font-size:31px;font-weight:400;display:block;}
+#mc-home-concepts .mc-strip-dday span{font-size:10px;opacity:.8;}
+#mc-home-concepts .mc-list-surface{background:var(--mc-paper);border:1px solid var(--mc-line);border-radius:var(--mc-radius);padding:21px 21px 3px;}
+#mc-home-concepts .mc-list-surface .mc-section-head{margin-bottom:20px;}
+#mc-home-concepts .mc-list-surface .mc-mail-row{padding-top:21px;padding-bottom:21px;}
+#mc-home-concepts .mc-list-surface .mc-mail-row:first-child{border-top:0;}
+#mc-home-concepts .mc-bottom-prompt{display:flex;justify-content:space-between;align-items:center;gap:14px;margin:26px 0 0;padding:0 3px;}
+#mc-home-concepts .mc-bottom-prompt p{font-size:12px;line-height:1.9;color:var(--mc-dim);margin:0;word-break:keep-all;}
+#mc-home-concepts .mc-bottom-prompt strong{color:var(--mc-text);font-weight:500;display:block;}
+#mc-home-concepts .mc-overlay{position:absolute;inset:0;z-index:10;border-radius:22px;background:light-dark(#26354455,#00000077);padding:33px 20px;display:flex;align-items:flex-start;justify-content:center;}
+#mc-home-concepts .mc-dialog{width:100%;max-width:490px;padding:27px;background:var(--mc-paper);border:1px solid var(--mc-line);border-radius:20px;box-shadow:0 20px 60px light-dark(#26354422,#00000033);}
+#mc-home-concepts .mc-dialog-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:22px;}
+#mc-home-concepts .mc-dialog h2{font-size:22px;letter-spacing:-.8px;}
+#mc-home-concepts .mc-dialog-intro{font-size:12px;color:var(--mc-dim);margin:6px 0 0;line-height:1.8;}
+#mc-home-concepts .mc-close{border:0;background:var(--mc-soft);display:grid;place-items:center;border-radius:50%;padding:8px;flex:none;}
+#mc-home-concepts .mc-close svg{width:16px;height:16px;}
+#mc-home-concepts .mc-form{display:flex;flex-direction:column;gap:14px;}
+#mc-home-concepts .mc-field{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:500;min-width:0;}
+#mc-home-concepts .mc-field input,#mc-home-concepts .mc-field textarea{display:block;width:100%;min-width:0;border:1px solid var(--mc-line);border-radius:10px;background:var(--mc-bg);color:var(--mc-text);font-size:14px;padding:11px 12px;font-weight:400;}
+#mc-home-concepts .mc-field textarea{resize:vertical;min-height:123px;line-height:1.85;}
+#mc-home-concepts .mc-field input::placeholder,#mc-home-concepts .mc-field textarea::placeholder{color:var(--mc-dim);opacity:.85;}
+#mc-home-concepts .mc-form-pair{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:12px;}
+#mc-home-concepts .mc-form-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:5px;}
+#mc-home-concepts .mc-form-note{font-size:10px;line-height:1.7;color:var(--mc-dim);}
+#mc-home-concepts .mc-detail-meta{display:flex;flex-wrap:wrap;gap:8px 20px;padding:14px 0;border-top:1px solid var(--mc-line);border-bottom:1px solid var(--mc-line);font-size:12px;color:var(--mc-dim);line-height:1.8;overflow-wrap:anywhere;}
+#mc-home-concepts .mc-detail-letter{white-space:pre-wrap;font-size:14px;line-height:2;color:var(--mc-text);min-height:150px;padding-top:17px;}
+#mc-home-concepts .mc-detail-footer{display:flex;justify-content:flex-end;margin-top:16px;}
+#mc-home-concepts .mc-toast{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:20;padding:12px 17px;max-width:calc(100% - 32px);width:max-content;border-radius:12px;background:var(--mc-ink);color:var(--mc-on-ink);font-size:12px;box-shadow:0 5px 20px light-dark(#26354420,#00000020);}
+#mc-home-concepts .mc-list-view-title{font-size:27px;margin:6px 0 10px;letter-spacing:-1px;}
+@media(min-width:920px){#mc-home-concepts .mc-main{padding-left:38px;padding-right:30px;}#mc-home-concepts .mc-hero{grid-template-columns:minmax(0,1fr) 190px;}#mc-home-concepts h1{font-size:35px;}#mc-home-concepts .mc-envelope-scene{margin-right:12px;}}
+@media(max-width:760px){#mc-home-concepts .mc-app{grid-template-columns:154px minmax(0,1fr);padding:11px;}#mc-home-concepts .mc-side{padding:22px 8px 13px;}#mc-home-concepts .mc-brand{font-size:18px;gap:7px;padding-left:6px;}#mc-home-concepts .mc-nav-button{padding:13px 9px;font-size:12px;gap:8px;}#mc-home-concepts .mc-main{padding:14px 9px 8px 22px;}#mc-home-concepts .mc-topbar{padding-right:50px;}#mc-home-concepts h1{font-size:28px;}#mc-home-concepts .mc-hero{grid-template-columns:minmax(0,1fr) 125px;gap:4px;}#mc-home-concepts .mc-envelope-scene{transform:scale(.8);transform-origin:center;}#mc-home-concepts .mc-feature-grid{grid-template-columns:1fr;}#mc-home-concepts .mc-prompt{display:none;}#mc-home-concepts .mc-mail-row{grid-template-columns:29px minmax(0,1fr) 75px 58px;gap:7px;}#mc-home-concepts .mc-row-arrow{display:none;}#mc-home-concepts .mc-row-date{font-size:10px;}#mc-home-concepts .mc-list-surface{padding:16px 13px 3px;}#mc-home-concepts .mc-list-hero{align-items:flex-start;flex-direction:column;}#mc-home-concepts .mc-list-hero h1{font-size:25px;}#mc-home-concepts .mc-bottom-prompt{align-items:flex-start;flex-direction:column;}}
+@media(max-width:540px){#mc-home-concepts .mc-stage{min-height:875px;}#mc-home-concepts .mc-app{display:block;min-height:863px;padding:10px;border-radius:17px;}#mc-home-concepts .mc-side{padding:14px 10px 10px;gap:13px;border-radius:13px;}#mc-home-concepts .mc-brand{border-bottom:0;padding:0 4px;font-size:18px;}#mc-home-concepts .mc-brand svg{width:21px;height:21px;}#mc-home-concepts .mc-nav{flex-direction:row;gap:5px;}#mc-home-concepts .mc-nav-button{justify-content:center;width:auto;flex:1;padding:11px 5px;font-size:11px;gap:5px;border-radius:8px;}#mc-home-concepts .mc-nav-button svg{width:15px;height:15px;}#mc-home-concepts .mc-side-bottom{display:none;}#mc-home-concepts .mc-main{padding:18px 9px 8px;}#mc-home-concepts .mc-topbar{padding-right:0;margin-bottom:16px;}#mc-home-concepts .mc-hero{grid-template-columns:minmax(0,1fr) 99px;min-height:222px;gap:0;padding-bottom:22px;}#mc-home-concepts h1{font-size:25px;letter-spacing:-1.2px;}#mc-home-concepts .mc-eyebrow{font-size:9px;letter-spacing:.6px;}#mc-home-concepts .mc-description{font-size:12px;line-height:1.8;}#mc-home-concepts .mc-envelope-scene{transform:scale(.61);transform-origin:center left;width:160px;margin-left:0;}#mc-home-concepts .mc-primary{font-size:11px;padding:11px 13px;min-height:44px;}#mc-home-concepts .mc-next{padding:17px;}#mc-home-concepts .mc-mail-row{grid-template-columns:29px minmax(0,1fr) 63px;row-gap:5px;padding:13px 0;}#mc-home-concepts .mc-row-date{grid-column:2;grid-row:2;}#mc-home-concepts .mc-row-subject{font-size:12px;}#mc-home-concepts .mc-row-icon{grid-row:1 / span 2;}#mc-home-concepts .mc-mail-row>.mc-status{grid-column:3;grid-row:1 / span 2;justify-self:end;}#mc-home-concepts .mc-row-email{display:none;}#mc-home-concepts .mc-list-hero{padding-top:4px;gap:14px;}#mc-home-concepts .mc-list-hero h1{font-size:25px;}#mc-home-concepts .mc-dispatch-strip{padding:18px 16px;margin-bottom:23px;gap:10px;}#mc-home-concepts .mc-strip-subject{font-size:15px;}#mc-home-concepts .mc-strip-dday b{font-size:25px;}#mc-home-concepts .mc-list-surface .mc-mail-row{padding:17px 0;}#mc-home-concepts .mc-overlay{padding:18px 10px;border-radius:17px;}#mc-home-concepts .mc-dialog{padding:21px 16px;}#mc-home-concepts .mc-form-pair{grid-template-columns:1fr;}#mc-home-concepts .mc-form-actions{align-items:flex-start;flex-direction:column;}#mc-home-concepts .mc-form-actions .mc-primary{width:100%;}#mc-home-concepts .mc-close{min-width:38px;min-height:38px;}}
+@media(prefers-reduced-motion:no-preference){#mc-home-concepts button{transition:background .16s ease,color .16s ease,filter .16s ease;}}
+</style>
+<div id="mc-home-concepts" lang="ko">
+<div class="viz-carousel" aria-label="메일캡슐 홈 화면 구성" data-previous-label="이전 구성" data-next-label="다음 구성">
+<section class="mc-stage" data-variant="편지 중심" aria-label="편지 중심 홈 화면">
+<div class="mc-app" data-mc-app="letter">
+<aside class="mc-side" aria-label="주 메뉴">
+<div class="mc-brand"><i data-lucide="calendar-clock" aria-hidden="true"></i>메일캡슐</div>
+<nav class="mc-nav" aria-label="메일캡슐 메뉴">
+<button type="button" class="mc-nav-button cursor-interaction" data-action="home" aria-current="page"><i data-lucide="house" aria-hidden="true"></i>홈</button>
+<button type="button" class="mc-nav-button cursor-interaction" data-action="compose"><i data-lucide="mail-plus" aria-hidden="true"></i>메일캡슐 만들기</button>
+<button type="button" class="mc-nav-button cursor-interaction" data-action="all"><i data-lucide="hourglass" aria-hidden="true"></i>내 메일캡슐</button>
+</nav>
+<div class="mc-side-bottom"><div class="mc-account"><span class="mc-avatar">나</span><div><div class="mc-account-name">나의 메일함</div><div class="mc-account-email">me@example.com</div></div></div></div>
+</aside>
+<main class="mc-main">
+<header class="mc-topbar"><span class="mc-breadcrumb" data-breadcrumb>홈</span><span class="mc-preview-label">시안 · 예시 데이터</span></header>
+<div data-home-content>
+<section class="mc-hero" aria-label="메일캡슐 소개">
+<div><p class="mc-eyebrow">A LETTER TO YOUR FUTURE</p><h1>오늘의 마음을,<br><span class="mc-title-accent">미래의 메일함으로.</span></h1><p class="mc-description">지금의 생각과 마음을 담아보세요.<br>날짜를 정하면, 그날 이메일로 보내드려요.</p><button type="button" class="mc-primary cursor-interaction" data-action="compose"><i data-lucide="plus" aria-hidden="true"></i>메일캡슐 작성하기</button></div>
+<div class="mc-envelope-scene" aria-hidden="true"><div class="mc-envelope-halo"></div><div class="mc-letter-paper"><div class="mc-paper-to">Dear. future me</div><div class="mc-paper-message">기억하고 싶은 오늘의 마음</div><div class="mc-paper-line"></div><div class="mc-paper-line"></div></div><div class="mc-envelope"></div><div class="mc-wax">TO. 나</div><div class="mc-letter-caption">SENT WITH TIME</div></div>
+</section>
+<div class="mc-feature-grid" data-feature>
+<section class="mc-next" aria-label="가장 가까운 발송 예정 메일"><div class="mc-next-top"><span class="mc-next-title">가장 먼저 떠날 편지</span><span class="mc-status">발송 예정</span></div><h2 class="mc-next-subject" data-next-subject>가을 끝자락의 나에게</h2><div class="mc-next-email" data-next-email>받을 이메일 · me@example.com</div><div class="mc-next-bottom"><div><div class="mc-date-label">발송 예정일</div><div class="mc-date-value" data-next-date>2026년 11월 20일</div></div><div class="mc-dday" data-next-dday>D−23</div></div></section>
+<aside class="mc-prompt"><div class="mc-prompt-label"><i data-lucide="pencil-line" aria-hidden="true"></i>오늘의 글감</div><p class="mc-prompt-question">미래의 나에게<br>꼭 해주고 싶은<br>말이 있나요?</p><button type="button" class="mc-link cursor-interaction" data-action="prompt">이 이야기로 시작하기<i data-lucide="arrow-up-right" aria-hidden="true"></i></button></aside>
+</div>
+</div>
+<section aria-label="내 메일캡슐 목록"><div class="mc-section-head"><h2 data-list-heading>내 메일캡슐<span class="mc-count" data-list-count>3</span></h2><button type="button" class="mc-link cursor-interaction" data-action="all" data-view-all>전체 보기<i data-lucide="arrow-right" aria-hidden="true"></i></button></div><div class="mc-mail-list" data-mail-list>
+<button type="button" class="mc-mail-row cursor-interaction" data-mail="autumn"><span class="mc-row-icon"><i data-lucide="mail" aria-hidden="true"></i></span><span class="mc-row-subject">가을 끝자락의 나에게<span class="mc-row-email">me@example.com</span></span><span class="mc-row-date">2026.11.20</span><span class="mc-status">발송 예정</span><i class="mc-row-arrow" data-lucide="chevron-right" aria-hidden="true"></i></button>
+<button type="button" class="mc-mail-row cursor-interaction" data-mail="newyear"><span class="mc-row-icon"><i data-lucide="mail" aria-hidden="true"></i></span><span class="mc-row-subject">새해의 나에게<span class="mc-row-email">me@example.com</span></span><span class="mc-row-date">2027.01.01</span><span class="mc-status">발송 예정</span><i class="mc-row-arrow" data-lucide="chevron-right" aria-hidden="true"></i></button>
+<button type="button" class="mc-mail-row cursor-interaction" data-mail="promise"><span class="mc-row-icon"><i data-lucide="mail-check" aria-hidden="true"></i></span><span class="mc-row-subject">한 달 전의 작은 다짐<span class="mc-row-email">me@example.com</span></span><span class="mc-row-date">2026.10.20</span><span class="mc-status is-sent">발송 완료</span><i class="mc-row-arrow" data-lucide="chevron-right" aria-hidden="true"></i></button>
+</div><div class="mc-empty" data-empty hidden><strong>아직 예약한 메일이 없어요.</strong><p>미래의 나에게 전하고 싶은 말을 남겨보세요.<br>약속한 날, 이메일로 보내드릴게요.</p><button type="button" class="mc-primary cursor-interaction" data-action="compose">첫 메일캡슐 작성하기</button></div></section>
+<p class="mc-footnote"><i data-lucide="calendar-clock" aria-hidden="true"></i>예약한 편지는 지정한 날짜에 이메일로 발송돼요.</p>
+</main>
+<div class="mc-overlay" data-overlay hidden></div><div class="mc-toast" role="status" aria-live="polite" data-toast hidden></div>
+</div>
+</section>
+<section class="mc-stage" data-variant="예약 중심" aria-label="예약 중심 홈 화면" hidden>
+<div class="mc-app" data-mc-app="schedule">
+<aside class="mc-side" aria-label="주 메뉴"><div class="mc-brand"><i data-lucide="calendar-clock" aria-hidden="true"></i>메일캡슐</div><nav class="mc-nav" aria-label="메일캡슐 메뉴"><button type="button" class="mc-nav-button cursor-interaction" data-action="home" aria-current="page"><i data-lucide="house" aria-hidden="true"></i>홈</button><button type="button" class="mc-nav-button cursor-interaction" data-action="compose"><i data-lucide="mail-plus" aria-hidden="true"></i>메일캡슐 만들기</button><button type="button" class="mc-nav-button cursor-interaction" data-action="all"><i data-lucide="hourglass" aria-hidden="true"></i>내 메일캡슐</button></nav><div class="mc-side-bottom"><div class="mc-account"><span class="mc-avatar">나</span><div><div class="mc-account-name">나의 메일함</div><div class="mc-account-email">me@example.com</div></div></div></div></aside>
+<main class="mc-main"><header class="mc-topbar"><span class="mc-breadcrumb" data-breadcrumb>홈</span><span class="mc-preview-label">시안 · 예시 데이터</span></header>
+<div data-home-content><section class="mc-list-hero"><div><p class="mc-eyebrow">YOUR LETTERS, ON THEIR WAY</p><h1>내가 보낸 마음이<br>차곡차곡 기다리고 있어요.</h1><p class="mc-description">미래의 어느 날, 메일함에서 다시 만나요.</p></div><button type="button" class="mc-primary cursor-interaction" data-action="compose"><i data-lucide="plus" aria-hidden="true"></i>새 편지 쓰기</button></section>
+<section class="mc-dispatch-strip" aria-label="다음 발송 예정" data-feature><div><div class="mc-strip-title"><i data-lucide="send" aria-hidden="true"></i>다음 발송 예정</div><div class="mc-strip-subject" data-next-subject>가을 끝자락의 나에게</div><div class="mc-strip-date" data-next-date>2026년 11월 20일</div></div><div class="mc-strip-dday"><b data-next-dday>D−23</b><span>메일함에 닿기까지</span></div></section></div>
+<section class="mc-list-surface" aria-label="내 메일캡슐 목록"><div class="mc-section-head"><h2 data-list-heading>내 메일캡슐<span class="mc-count" data-list-count>3</span></h2><button type="button" class="mc-link cursor-interaction" data-action="all" data-view-all>전체 보기<i data-lucide="arrow-right" aria-hidden="true"></i></button></div><div class="mc-mail-list" data-mail-list>
+<button type="button" class="mc-mail-row cursor-interaction" data-mail="autumn"><span class="mc-row-icon"><i data-lucide="mail" aria-hidden="true"></i></span><span class="mc-row-subject">가을 끝자락의 나에게<span class="mc-row-email">me@example.com</span></span><span class="mc-row-date">2026.11.20</span><span class="mc-status">발송 예정</span><i class="mc-row-arrow" data-lucide="chevron-right" aria-hidden="true"></i></button>
+<button type="button" class="mc-mail-row cursor-interaction" data-mail="newyear"><span class="mc-row-icon"><i data-lucide="mail" aria-hidden="true"></i></span><span class="mc-row-subject">새해의 나에게<span class="mc-row-email">me@example.com</span></span><span class="mc-row-date">2027.01.01</span><span class="mc-status">발송 예정</span><i class="mc-row-arrow" data-lucide="chevron-right" aria-hidden="true"></i></button>
+<button type="button" class="mc-mail-row cursor-interaction" data-mail="promise"><span class="mc-row-icon"><i data-lucide="mail-check" aria-hidden="true"></i></span><span class="mc-row-subject">한 달 전의 작은 다짐<span class="mc-row-email">me@example.com</span></span><span class="mc-row-date">2026.10.20</span><span class="mc-status is-sent">발송 완료</span><i class="mc-row-arrow" data-lucide="chevron-right" aria-hidden="true"></i></button>
+</div><div class="mc-empty" data-empty hidden><strong>아직 예약한 메일이 없어요.</strong><p>지금의 마음을 적어두면,<br>미래의 나에게 소중한 편지가 될 거예요.</p><button type="button" class="mc-primary cursor-interaction" data-action="compose">첫 메일캡슐 작성하기</button></div></section>
+<div class="mc-bottom-prompt" data-bottom-prompt><p><strong>오늘의 나를 기억하고 싶다면.</strong>요즘 가장 소중한 것부터 적어보는 건 어때요?</p><button type="button" class="mc-secondary cursor-interaction" data-action="prompt">이 이야기로 시작하기<i data-lucide="arrow-up-right" aria-hidden="true" style="width:14px;height:14px"></i></button></div><p class="mc-footnote"><i data-lucide="calendar-clock" aria-hidden="true"></i>예약한 편지는 지정한 날짜에 이메일로 발송돼요.</p>
+</main><div class="mc-overlay" data-overlay hidden></div><div class="mc-toast" role="status" aria-live="polite" data-toast hidden></div>
+</div>
+</section>
+</div>
+<template id="mc-compose-template"><section class="mc-dialog" role="dialog" aria-modal="true" aria-labelledby="mc-composer-title"><div class="mc-dialog-head"><div><h2 id="mc-composer-title">미래로 보내는 편지</h2><p class="mc-dialog-intro">지금의 마음을 적고, 만나고 싶은 날짜를 골라주세요.</p></div><button type="button" class="mc-close cursor-interaction" data-close aria-label="작성 창 닫기"><i data-lucide="x" aria-hidden="true"></i></button></div><form class="mc-form"><label class="mc-field">편지 제목<input name="subject" required maxlength="70" placeholder="미래의 나에게 전하고 싶은 말"></label><div class="mc-form-pair"><label class="mc-field">받을 이메일<input name="email" type="email" required value="me@example.com" autocomplete="off"></label><label class="mc-field">발송할 날짜<input name="date" type="date" required min="2026-10-29" value="2027-01-01"></label></div><label class="mc-field">편지 내용<textarea name="message" required placeholder="안녕, 미래의 나. 오늘은 어떤 하루를 보내고 있어?"></textarea></label><div class="mc-form-actions"><span class="mc-form-note">시안 체험 · 실제 이메일은 발송되지 않아요.</span><button type="submit" class="mc-primary cursor-interaction"><i data-lucide="send" aria-hidden="true"></i>이 날짜에 보내기</button></div></form></section></template>
+<template id="mc-detail-template"><section class="mc-dialog" role="dialog" aria-modal="true" aria-labelledby="mc-detail-title"><div class="mc-dialog-head"><div><p class="mc-eyebrow">MY MAIL CAPSULE</p><h2 id="mc-detail-title" data-detail-title></h2></div><button type="button" class="mc-close cursor-interaction" data-close aria-label="편지 상세 닫기"><i data-lucide="x" aria-hidden="true"></i></button></div><div class="mc-detail-meta"><span data-detail-email></span><span data-detail-date></span></div><div class="mc-detail-letter" data-detail-letter></div><div class="mc-detail-footer"><button type="button" class="mc-secondary cursor-interaction" data-close>닫기</button></div></section></template>
+</div>
+<script>
+(() => {
+  const root = document.getElementById('mc-home-concepts');
+  const sample = [
+    {id:'autumn',subject:'가을 끝자락의 나에게',email:'me@example.com',date:'2026-11-20',status:'pending',message:'안녕, 미래의 나.\n\n오늘은 조금 쌀쌀한 가을날이야. 하고 싶은 일도 많고 걱정도 조금 있지만, 그래도 한 걸음씩 가보려고 해.\n\n이 편지를 읽을 때쯤에는 지금의 작은 고민들이 조금은 가벼워졌으면 좋겠다. 따뜻한 차 한 잔 마시고, 오늘의 나를 잠깐 떠올려줘.'},
+    {id:'newyear',subject:'새해의 나에게',email:'me@example.com',date:'2027-01-01',status:'pending',message:'새해의 나에게.\n\n새로운 시작 앞에서 너무 조급해하지 않았으면 좋겠어. 작은 약속 하나라도 꾸준히 지켜나가자.\n\n올해는 내가 좋아하는 것들을 조금 더 자주 만나길.'},
+    {id:'promise',subject:'한 달 전의 작은 다짐',email:'me@example.com',date:'2026-10-20',status:'sent',message:'오늘의 작은 다짐.\n\n하루에 잠깐이라도 나를 위한 시간을 남겨두기. 바쁘다는 이유로 좋아하는 것들을 잊지 않기.\n\n한 달 뒤에도 이 마음을 기억하고 있을까?'}
+  ];
+  const saved = window.openai?.widgetState;
+  const validSaved = saved && typeof saved === 'object' ? saved : {};
+  const memories = new Map();
+  const dateLabel = date => { const p = date.split('-'); return `${p[0]}년 ${Number(p[1])}월 ${Number(p[2])}일`; };
+  const daysLeft = date => Math.max(0,Math.round((Date.parse(date+'T00:00:00Z')-Date.parse('2026-10-28T00:00:00Z'))/86400000));
+  function icons(){if(globalThis.lucide)lucide.createIcons({attrs:{width:16,height:16}});}
+  function save(){
+    if(!window.openai?.setWidgetState)return;
+    const layouts={};
+    for(const [name,m] of memories)layouts[name]={view:m.view,empty:m.design.empty,radius:m.design.radius,gap:m.design.gap};
+    window.openai.setWidgetState({modelContent:{screen:'메일캡슐 홈 시안',layouts},privateContent:null}).catch(()=>{});
+  }
+  function openPanel(app,template){
+    const overlay=app.querySelector('[data-overlay]');
+    overlay.replaceChildren(root.querySelector(template).content.cloneNode(true));
+    overlay.hidden=false;
+    const previous=document.activeElement;
+    const close=()=>{overlay.hidden=true;overlay.replaceChildren();previous?.focus();};
+    overlay.querySelectorAll('[data-close]').forEach(button=>button.addEventListener('click',close));
+    overlay.onclick=event=>{if(event.target===overlay)close();};
+    overlay.onkeydown=event=>{
+      if(event.key==='Escape'){event.preventDefault();close();return;}
+      if(event.key!=='Tab')return;
+      const focusables=Array.from(overlay.querySelectorAll('button,input,textarea,select')).filter(el=>!el.disabled);
+      const first=focusables[0],last=focusables[focusables.length-1];
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
+    };
+    icons();
+    overlay.querySelector('input,[data-close]')?.focus({preventScroll:true});
+    return {overlay,close};
+  }
+  function rowFor(mail){
+    const row=document.createElement('button');row.type='button';row.className='mc-mail-row cursor-interaction';row.dataset.mail=mail.id;
+    const icon=document.createElement('span');icon.className='mc-row-icon';
+    const glyph=document.createElement('i');glyph.dataset.lucide=mail.status==='sent'?'mail-check':'mail';glyph.setAttribute('aria-hidden','true');icon.append(glyph);
+    const subject=document.createElement('span');subject.className='mc-row-subject';subject.append(document.createTextNode(mail.subject));
+    const email=document.createElement('span');email.className='mc-row-email';email.textContent=mail.email;subject.append(email);
+    const date=document.createElement('span');date.className='mc-row-date';date.textContent=mail.date.replaceAll('-','.');
+    const status=document.createElement('span');status.className='mc-status'+(mail.status==='sent'?' is-sent':'');status.textContent=mail.status==='sent'?'발송 완료':'발송 예정';
+    const arrow=document.createElement('i');arrow.className='mc-row-arrow';arrow.dataset.lucide='chevron-right';arrow.setAttribute('aria-hidden','true');
+    row.append(icon,subject,date,status,arrow);return row;
+  }
+  function update(app,m){
+    app.style.setProperty('--mc-radius',`${m.design.radius}px`);
+    app.style.setProperty('--mc-gap',`${m.design.gap}px`);
+    const list=m.design.empty?[]:m.mails;
+    const all=m.view==='all';
+    app.querySelector('[data-breadcrumb]').textContent=all?'내 메일캡슐':'홈';
+    app.querySelectorAll('.mc-nav-button').forEach(button=>{if((button.dataset.action==='all'&&all)||(button.dataset.action==='home'&&!all))button.setAttribute('aria-current','page');else button.removeAttribute('aria-current');});
+    app.querySelector('[data-home-content]').hidden=all;
+    app.querySelector('[data-view-all]').hidden=all;
+    const heading=app.querySelector('[data-list-heading]');heading.firstChild.textContent=all?'예약 및 발송 내역':'내 메일캡슐';
+    app.querySelector('[data-list-count]').textContent=String(list.length);
+    app.querySelector('[data-mail-list]').replaceChildren(...list.map(rowFor));
+    app.querySelector('[data-empty]').hidden=list.length>0;
+    const next=list.filter(mail=>mail.status==='pending').sort((a,b)=>a.date.localeCompare(b.date))[0];
+    app.querySelector('[data-feature]').hidden=!next;
+    if(next){app.querySelector('[data-next-subject]').textContent=next.subject;app.querySelector('[data-next-date]').textContent=dateLabel(next.date);app.querySelector('[data-next-dday]').textContent=`D−${daysLeft(next.date)}`;const email=app.querySelector('[data-next-email]');if(email)email.textContent=`받을 이메일 · ${next.email}`;}
+    const prompt=app.querySelector('[data-bottom-prompt]');if(prompt)prompt.hidden=all;
+    icons();
+  }
+  for(const app of root.querySelectorAll('[data-mc-app]')){
+    const name=app.dataset.mcApp;
+    const restored=validSaved.modelContent?.layouts?.[name]||validSaved.layouts?.[name]||{};
+    const m={view:restored.view==='all'?'all':'home',mails:sample.map(mail=>({...mail})),design:{radius:Number.isFinite(restored.radius)?restored.radius:18,gap:Number.isFinite(restored.gap)?restored.gap:24,empty:restored.empty===true}};
+    memories.set(name,m);
+    app.addEventListener('click',event=>{
+      const mailButton=event.target.closest('[data-mail]');
+      if(mailButton){const mail=m.mails.find(item=>item.id===mailButton.dataset.mail);if(!mail)return;const {overlay}=openPanel(app,'#mc-detail-template');overlay.querySelector('[data-detail-title]').textContent=mail.subject;overlay.querySelector('[data-detail-email]').textContent=`받을 이메일 · ${mail.email}`;overlay.querySelector('[data-detail-date]').textContent=`${mail.status==='sent'?'발송 완료':'발송 예정'} · ${dateLabel(mail.date)}`;overlay.querySelector('[data-detail-letter]').textContent=mail.message;return;}
+      const action=event.target.closest('[data-action]')?.dataset.action;if(!action)return;
+      if(action==='home'||action==='all'){m.view=action;update(app,m);save();return;}
+      if(action==='compose'||action==='prompt'){
+        const {overlay,close}=openPanel(app,'#mc-compose-template');const form=overlay.querySelector('form');
+        if(action==='prompt'){form.elements.subject.value='미래의 나에게 꼭 해주고 싶은 말';form.elements.message.value='안녕, 미래의 나.\n\n지금의 내가 꼭 전하고 싶은 말은…';}
+        form.addEventListener('submit',event=>{event.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);const date=String(data.get('date'));if(date<'2026-10-29')return;
+          m.mails.unshift({id:`preview-${Date.now()}`,subject:String(data.get('subject')).trim(),email:String(data.get('email')).trim(),date,status:'pending',message:String(data.get('message')).trim()});m.design.empty=false;close();update(app,m);save();const toast=app.querySelector('[data-toast]');toast.textContent='미리보기에서 예약이 추가됐어요. 실제 이메일은 발송되지 않아요.';toast.hidden=false;clearTimeout(m.toastTimer);m.toastTimer=setTimeout(()=>{toast.hidden=true;},4500);
+        });
+      }
+    });
+    update(app,m);
+    if(globalThis.Tweak){const tweak=new Tweak({container:app,onChange:()=>{update(app,m);save();}});tweak.addSlider(m.design,'radius',{label:'카드 모서리',min:8,max:26,unit:'px'});tweak.addSlider(m.design,'gap',{label:'영역 사이 여백',min:16,max:36,unit:'px'});tweak.addToggle(m.design,'empty',{label:'첫 방문 · 예약 없는 상태'});}
+  }
+  window.addEventListener('openai:set_globals',event=>{const state=event.detail?.globals?.widgetState;const layouts=state?.modelContent?.layouts||state?.layouts;if(!layouts)return;for(const app of root.querySelectorAll('[data-mc-app]')){const m=memories.get(app.dataset.mcApp);const incoming=layouts[app.dataset.mcApp];if(!incoming)continue;m.view=incoming.view==='all'?'all':'home';if(typeof incoming.empty==='boolean')m.design.empty=incoming.empty;if(Number.isFinite(incoming.radius))m.design.radius=incoming.radius;if(Number.isFinite(incoming.gap))m.design.gap=incoming.gap;update(app,m);}});
+})();
+</script>
