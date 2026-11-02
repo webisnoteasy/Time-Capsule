@@ -1,5 +1,4 @@
 import LoginInput from "./LoginInput";
-import movePage from "./Component/movePage";
 import { useNavigate } from "react-router-dom";
 import signUpCheck from "./Component/signUpCheck";
 
@@ -19,7 +18,7 @@ const SignUp = ()=>{
                 </button>
                 <h1>이미 계정이 있으신가요?
                     <span> </span>
-                    <span className="text-blue-700 hover:text-blue-700 font-bold cursor-pointer" onClick={()=>{movePage({nav, pos : '/login'})}}>
+                    <span className="text-blue-700 hover:text-blue-700 font-bold cursor-pointer" onClick={()=>{nav('/login')}}>
                         로그인
                     </span>
                 </h1>

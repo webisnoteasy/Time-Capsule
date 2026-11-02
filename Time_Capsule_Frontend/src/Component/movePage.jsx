@@ -1,5 +1,5 @@
-const movePage = ({nav, pos})=>{
-    if (true){
+const movePage = ({nav, pos, isLogin})=>{
+    if (isLogin){
         nav(pos)
     }else{
         nav('/noLogin')
